@@ -24,7 +24,7 @@ export default function Payment(){
 
   return (
     <div className="">
-      <h1 className="text-red-400 font-bold text-2xl">Global System Care</h1>
+      <h1 className="font-bold text-2xl">Global System Care</h1>
       {clientSecret && stripePromise && (
         <Elements stripe={stripePromise} options={{ clientSecret }}>
           <CheckoutForm />
